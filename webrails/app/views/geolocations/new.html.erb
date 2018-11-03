@@ -1,0 +1,16 @@
+<div style="width: 80%;margin:0 auto;">
+	<h1>Crear articulo</h1>
+	<%= render "geolocations/form.html.erb" %>
+	<h1>Cadencia (doctores) </h1>
+	<%= bar_chart @userdata.group(:cadency).count %>
+	<%= bar_chart @userdata.group_by_day(:date).group(:cadency).count %>
+	<%= line_chart @userdata.group_by_day(:date).group(:cadency).count %>
+	<%= bar_chart @userdata.group(:id).group_by_day(:date).group(:cadency).count %>
+	<%= line_chart @userdata.group(:id).group_by_day(:date).group(:cadency).count %>
+	<h2>Distancia (Padres y doctores) </h2>
+	<%= bar_chart @userdata.group_by_day(:date).group(:distance).count %>
+	<%= line_chart @userdata.group_by_day(:date).group(:distance).count %>
+	<h3>Frecuencia cardiaca (Padres y doctores) </h3>
+	<%= bar_chart @userdata.group_by_day(:date).group(:cardiacf).count %>
+	<%= line_chart @userdata.group_by_day(:date).group(:cardiacf).count %>
+</div>

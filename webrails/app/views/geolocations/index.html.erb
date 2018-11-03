@@ -1,0 +1,6 @@
+<% @geolocations.each do |geolocation| %>
+<h1><%= link_to geolocation.title, geolocation %></h1>
+<div>
+	<%= geolocation.body %> - <%= link_to "Eliminar",geolocation,method: :delete%>
+</div>
+<%end%>

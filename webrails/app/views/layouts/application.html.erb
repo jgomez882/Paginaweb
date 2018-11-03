@@ -1,0 +1,75 @@
+<!-- Aca se mostrara el codigo de la barra principal con sus respectivos links --->
+<!DOCTYPE html> 
+<html>
+<head>
+	<%= javascript_include_tag "application", "chartkick" %>
+	<%= yield :charts_js %>
+	<%= javascript_include_tag "https://www.gstatic.com/charts/loader.js" %>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Ovi</title>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		<%= csrf_meta_tags %>
+</head>
+<body>
+
+<header>
+	<!-- Para saber el nombre del css buscan por ejemplo large-padding en "style.css" y si por alguna razon no aparece es que esta por default de html ---> 
+	<nav class="be-color letraP large-padding">
+		<ul class="no-list  row center-xs middle-xs articles">
+
+				<li class="col-md ">
+					<!--Codigo de ruby para poner una imagen --->
+					
+					<%= image_tag("Logo.png", :alt => "Logo feed", class:"heightImage") %>
+				</li>
+
+				<li class="col-md">
+				</li>
+
+				<li class="t1" >
+					<!-- Me lleva ala pagina de inicio-->
+					<%= link_to "INICIO", root_path %>
+				</li>
+				
+				<li class="t1">
+					<!-- new.html  new_geolocation_path-->
+					<!-- Para ir a este pagina uno busca en la carpeta geolocations y busca a nosotros.html.erb ---> 
+					<%= link_to "NOSOTROS", nosotros_path , method: :get %>	 
+				</li>
+
+				<li class="t1">
+					<%= link_to "CONTACTENOS", contactanos_path , method: :get %>
+				</li>
+
+			<% if user_signed_in? %>
+
+				<li class="col-md">
+					<%= link_to "Cerrar sesion", destroy_user_session_path, method: :delete %>
+				</li>
+
+			<%else%>
+
+				<li class="t2">
+					<%= link_to "INICIAR SESION", new_user_session_path %>
+				</li>
+
+				<li class="t3">
+					<%= link_to "REGISTRATE", new_user_registration_path , class:"tb" %>
+				</li>
+
+			<%end%>
+		</ul>
+
+	</nav>
+
+</header>
+
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+
+<%= yield %>
+
+</body>
+</html>

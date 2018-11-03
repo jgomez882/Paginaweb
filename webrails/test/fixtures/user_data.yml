@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2018-10-22
+  cadency: 1
+  distance: 1
+  cardiacf: 1
+  energeticg: 1
+  weightd: 1
+
+two:
+  date: 2018-10-22
+  cadency: 1
+  distance: 1
+  cardiacf: 1
+  energeticg: 1
+  weightd: 1

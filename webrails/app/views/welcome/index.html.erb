@@ -1,0 +1,190 @@
+<body class="foto">
+	<div class="section md-padding ">
+		<!-- Container -->
+		<div class="container md-borderPadding ">
+			<!-- Row -->
+			<div class="row ">
+					<!-- Cuadro1 -->
+					<div class="col-md-4">
+					<!-- Aca va el color de cada cuadro de dialogo --->
+						<div class="cdialogo fontdialogo">
+							<i class="fa fa-magic"></i>
+							<h3 class="fontdialogo fontdialogo-align">INFORMACION GENERAL</h3>
+							<p class="margin-cuadrodialogo">El proyecto se enfoca en crear una herramienta para especialistas y padres,con el fin de llevar registro del avance del paciente</p>
+							<a class= "btn-amarillo"href="/informaciongeneral">Leer más</a>
+						</div>
+					</div>
+				<!-- /Termina cuadro 1 -->
+
+				<!-- Cuadro 2 -->
+					<div class="col-md-4">
+						<div class="cdialogo fontdialogo">
+							<i class="fa fa-cogs"></i>
+							<h3 class="fontdialogo fontdialogo-align1">ESPECIALISTAS</h3>
+							<p class="margin-cuadrodialogo">Encontraran informacion como graficas y estadisticas que representan el progreso del paciente dia a dia</p>
+							<a class= "btn-amarillo" href="/especialistas">Leer mas</a>
+						</div>
+					</div>
+				<!-- /Termina el cuadro 2 -->
+
+				<!-- Cuadro 3 -->
+					<div class="col-md-4">
+						<div class="cdialogo fontdialogo">
+							<i class="fa fa-magic"></i>
+							<h3 class="fontdialogo fontdialogo-align2">PADRES</h3>
+							<p class="margin-cuadrodialogo">Encontraran informacion como graficas y estadisticas que representan el progreso de su hijo dia a dia</p>
+							<a class="btn-amarillo" href="/padres">Leer mas</a>
+						</div>
+					</div>
+				<!-- /Termina cuadro 3 -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /termina -->
+
+
+</body>
+
+<!-- Aca empieza el segundo div que seria el del cuadro gris --->
+
+<div class="no-margin md-informacion">
+	<h1 class="color-letra-grande-simbolos">INFORMACION QUE ENCONTRARAS</h1>
+	<div class="section">
+		<!-- Container -->
+			<!-- Row -->
+			<div class="row">
+				
+				<!-- cuadro 1 informacion pacientes-->
+					<div class="col-md-4 ">
+						<div class="fontdialogo">
+						<%= image_tag("image1.png", :alt => "image1 feed" , style:"width: 75px; height: 75px;") %>
+								<i class="fa fa-magic "></i>
+								<p class="color-letra-grande-simbolos"> informacion de los pacientes</p>
+								<p class="color-letra-pequeña-gris">El proyecto se enfoca en crear una herramienta</p>
+						</div>
+					</div>
+				<!-- /termina informacion pacientes-->
+
+				<!-- cuadro 2  Graficas y estadisticas-->
+					<div class="col-md-4">
+						<div class="fontdialogo">
+							<%= image_tag("image2.png", :alt => "image2 feed" , style:"width: 75px; height: 75px;") %>
+							<i class="fa fa-cogs"></i>
+							<p class="color-letra-grande-simbolos">Graficas y Estadisticas</p>
+							<p class="color-letra-pequeña-gris">Encontraran informacion como graficas y estadisticas</p>
+						</div>
+					</div>
+				<!-- /cuadro 2 terminado-->
+
+				<!-- cuadro 3 Usuario Personalizado -->
+					<div class="col-md-4">
+						<div class="fontdialogo">
+						<%= image_tag("image3.png", :alt => "simbolo feed" , style:"width: 75px; height: 75px;") %>
+							<i class="fa fa-magic"></i>
+							<p class="color-letra-grande-simbolos">Usuario Personalizado</p>
+							<p class="color-letra-pequeña-gris">Encontraran informacion como graficas y estadisticas</p>
+						</div>
+					</div>
+				<!-- /cuadro 3 terminado -->
+			</div>
+			<!-- /Row -->
+	</div>
+
+
+	<!-- Empieza el tercer div el cual contiene las 3 imagenes-->
+	<div class="backgroundBlanco">
+		<div class="section">
+				<div class="row ">
+					
+					<!-- caminador lado derecho-->
+						<div class="col-md-4 ">
+							<div class="">
+								<%= image_tag("caminadorLI.png", :alt => "image1 feed" , style:"width: 70%; height: 70%; margin-top: 85px;") %>	
+							</div>
+						</div>
+					<!-- /termina-->
+
+					<!-- cuadro intermedio de OVI -->
+						<div class="col-md-4">
+							<div class="">
+							<%= image_tag("Oviinfo.jpg", :alt => "image2 feed" , style:"width: 50%; height: 50%; margin-top: 100px;") %>
+							<p class="color-letra-grande-simbolos">EMOCION EN MOVIMIENTO</p>
+							</div>
+						</div>
+					<!-- /termina-->
+
+					<!-- cuadro caminador lado derecho -->
+						<div class="col-md-4">
+							<div class="">
+								<%= image_tag("caminadorLI.png", :alt => "image1 feed" , style:"width: 70%; height: 70%; margin-top: 85px") %>
+							</div>
+						</div>
+					<!-- /termina -->
+				</div>
+	</div>
+
+	
+</div>
+
+<!-- ultimo cuadro de registrate -->
+<header class="background-colorRegistrate" >
+	<div class="text-alineado-simbolos ">
+		<h1 class= " color-letra-grande-simbolos" style="padding-bottom: 25px">¿QUIERES REGISTRARTE?</h1>
+			<p class="color-letra-pequeña-gris" style="padding-bottom: 20px">Aprovecha esta herramienta y forma parte de este proyecto</p>
+			
+			<li class="t3RegistrarAbajo">
+			
+				<%= link_to "REGISTRATE!", new_user_registration_path , class:"tb" %>		
+			</li>
+		
+	</div>
+ 
+</header>
+
+<!-- termina el cuadro de registrate --->
+
+<div class="be-colorseccionabajo">
+		<div class="section" style="height:300px" >
+
+				<div class="row ">
+					
+					<!-- cuadro 1-->
+						<div class="col-md-4 ">
+							<div class="">
+		
+								<%= image_tag("ovip.png", :alt => "image2 feed" , style:"width: 10%; height: 10%; margin-top: 60px;") %>	
+								<p class="fontdialogoletraseccionabajo1">123-456</p>
+								<p class="fontdialogoletraseccionabajo2">oviwalker@eafit.edu.co</p>
+								<p class="fontdialogoletraseccionabajo3">Medellin,Antioquia</p>
+							</div>
+						</div>
+
+						<!-- /linea vertical-->
+							<hr class="hr" width="1" size="280" style="margin-left: 0px;margin-right: 0px;">
+						<!-- termina linea vertical -->
+
+						<!-- /cuadro 2-->
+						<div class="col-md-4">
+							<div class="">
+							<p class="fontdialogoletraGrandeseccionabajo1" style=" width: 60px;height: 20px">Inicio</p>
+							</div>
+						</div>
+					<!-- /cuadro 2-->
+
+					<!-- cuadro 3 -->
+						<div class="col-md-4">
+							<div class="">	
+							<p class="fontdialogoletraGrandeseccionabajo2 red" style=" width: 60px;height: 20px">Nosotros</p>							
+							</div>
+						</div>
+					<!-- /cuadro 3 -->
+
+				</div>
+	</div>
+
+
